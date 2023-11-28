@@ -4,7 +4,7 @@
 ***
 
 ### Introduction
-
+---
 
 Embarking on an enlightening exploration guided by a comprehensive roadmap, this project involves a detailed analysis of the Adventure Works sales dataset extracted from Microsoft's SQL Server Adventureworks sample database. The necessary tables were thoughtfully extracted for further examination and analysis.
 
@@ -61,7 +61,10 @@ Assess profit dynamics based on different week types to understand variations an
 **Age Group Segmentation for Profit Analysis 👶👦👨👴:**
 - Segment profits into age groups to comprehend the demographic contributions to profitability, identifying which age groups contribute the most.
 
-### Tool Used: Microsoft Excel
+**Tool Used:** Microsoft Excel  
+
+---
+
 
 ### Analysis Process 
 
@@ -71,12 +74,13 @@ During the data cleaning phase, I identified and removed unnecessary columns fro
 
 One significant aspect of the data transformation involved the creation of a **Conditional column** to categorize _**Week Types**_ as either Weekday or Weekend. Using the Day Name parameter, I defined the logic as follows: 
 
-_If the Day Name is Saturday or Sunday, then categorize it as Weekend; otherwise, label it as Weekday._
+_**If the Day Name is Saturday or Sunday, then categorize it as Weekend; otherwise, label it as Weekday**._
 
 Additionally, I implemented metrics for classifying products into Expensive and Less Expensive categories. The criteria were set as follows: If the product price is less than or equal to **$150**, categorize it as **Less Expensive**; otherwise, label it as **Expensive**. This classification enabled me to compare the percentage rates of Less Expensive products to Expensive products based on their prices.
 
-### Now, Let’s talk about the KPI.
-I created some Dax to achieve my KPIs using functions like 
+### Skills / Concept demonstrated:
+
+To achieve this, I created some Dax to achieve my KPIs using functions like 
 
 - Distinct count function
 - Sum function
@@ -91,44 +95,61 @@ I created some Dax to achieve my KPIs using functions like
 - Index- Match function
 - IF and IFs function
 
-## How the functions are written using Dax on Excel 
+ 
+ **How the functions are written using Dax on Excel**
 
-Total Customers = DISTINCTCOUNT (FactlnternetSales [CustomerKey]) 
-Total Revenue = [Price] * [ OrderQuantity] 
-COGS = [OrderQuantity]*[Cost] 
-Total Profit = [Revenue] – [COGS] 
- #Transaction = COUNTROWS(FactIntemetSales) 
-# Quantity = Sum (FactIntemetSales [OrderQuantity]) 
- % Profit Margin = DIVIDE (Sum of Profit]. [Sum of Total Revenue],0) 
-All Product:  COUNTROWS(DimProduct) 
-Sold Product = DISTINCTCOUNT (FactInternetSales [ProductKey]) 
-Unsold = [All Product] - [Sold Product] 
-Avg Customers Age = AVERAGE (DimCustomer [Customer Age]) 
+- Total Customers = DISTINCTCOUNT (FactlnternetSales [CustomerKey]) 
 
-** KPIs Results **
-Total Customers = 18,484
-Total Revenue = $307,0929,45.20
-COGS = 1$80,802,367.55
-Total Profit = $126,290,577.65
- #Transaction = 60,398
-# Quantity = 631,920
- % Profit Margin = 41.1%
-All Product = 606
-Sold Product = 158
-Unsold = 448
-Avg Customers Age = 44 years
+- Total Revenue = [Price] * [ OrderQuantity] 
 
-- To achieve the questions, I set for myself on this project I have to carryout a comprehensive analysis to determine the year that generated profit above average. 
-  Year 2007 and 2008 generated profit at (67.1%) 
+- COGS = [OrderQuantity]*[Cost] 
 
-- Monthly Profit Trend Analysis – It was discovered that Month of May at (13,733,395), June at (13,445,658.30) and December at (13,143,417.37) which these years contributed 39.9% of 
+- Total Profit = [Revenue] – [COGS] 
+
+- #Transaction = COUNTROWS(FactIntemetSales) 
+
+- Quantity = Sum (FactIntemetSales [OrderQuantity]) 
+
+- % Profit Margin = DIVIDE (Sum of Profit]. [Sum of Total Revenue],0) 
+
+- All Product:  COUNTROWS(DimProduct) 
+- Sold Product = DISTINCTCOUNT (FactInternetSales [ProductKey]) 
+
+- Unsold = [All Product] - [Sold Product] 
+
+- Avg Customers Age = AVERAGE (DimCustomer [Customer Age]) 
+
+### KPIs Results
+- Total Customers = 18,484
+- Total Revenue = $307,0929,45.20
+- COGS = 1$80,802,367.55
+- Total Profit = $126,290,577.65
+- #Transaction = 60,398
+- Quantity = 631,920
+- % Profit Margin = 41.1%
+- All Product = 606
+- Sold Product = 158
+- Unsold = 448
+- Avg Customers Age = 44 years
+
+### Data Modeling: 
+I realized that there are some unwanted relationship created automatically and the modeling was not well arranged hence i re-arranged the modeling and re-created the relation to fit the requirement. 
+
+## Data Visualization and Analayis 
+
+
+![](Time series_Dashboard.PNG)
+
+  To achieve the questions, I set for myself on this project I have to carryout a comprehensive analysis to determine the year that generated profit above average. 
+  Year 2007 and 2008 generated profit at (67.1%). 
+
+- Monthly Profit Trend Analysis, It was discovered that Month of May at (13,733,395), June at (13,445,658.30) and December at (13,143,417.37) which these years contributed 39.9% of 
   the total profit.
 
 - Dynamics of Profit by Week Type: Most of the profit was generated during the weekday at total sum of 90,937,627.35 at 72.1% and during the weekday, Wednesdays, Thursday, and Friday 
   contributed 43.8% of the total profit. 
 
-- Evaluate profit performance on a quarterly basis, identifying trends and variations throughout the year: Quarter: Quarter 2 contributed the most profit with total of 39,018,891.40 at 
-  (31%follow by Quarter 1 with 32,300,639.02 at (26%)
+- Evaluation of profit performance on a quarterly basis, identifying trends and variations throughout the year: Quarter: Quarter 2 contributed the most profit with total of 39,018,891.40 at (31% ) follow by Quarter 1 with 32,300,639.02 at (26%)
 
 ## Products and Customers Analysis 
    Products Analysis 
@@ -151,10 +172,11 @@ Our total customers were 18,48 and Average age of our customers was 44 years.
  other customers profit distribution was $125,939,566 at 99.7%
 
 
-Customers Demographic 
+**Customers Demographic** 
 Gender-Based Profit Analysis: There is a close relationship between both gender: The Male gender contributed 50.4 of total profit while Female at 49.6%
+- Age 51 plus contributed 33.8% of the total profit.
 
-- Age 51 plus contributed 33.8% of the total profit. 
+**Customers Location Analysis**
 - Australia and United States contributed 62.7% of the total profit with United States generated total sum of $40,537,131 and Australia with total sum of $38,700,142.
 
 
