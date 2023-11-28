@@ -95,6 +95,14 @@ To achieve this, I created some Dax to achieve my KPIs using functions like
 - Index- Match function
 - IF and IFs function
 
+ ### Modeling: 
+
+ Automatically generated relationships are adjusted to remove and replace unwanted relationship with required. 
+
+| Adjusted- model                                    |                       Auto - model |
+:..................................................: | :...............................:
+|![](Adjusted_model.PNG)                             |         ![](Auto_model_tbl.PNG)    |
+
  
  **How the functions are written using Dax on Excel**
 
