@@ -79,8 +79,29 @@ _**If the Day Name is Saturday or Sunday, then categorize it as Weekend; otherwi
 Additionally, I implemented metrics for classifying products into Expensive and Less Expensive categories. The criteria were set as follows: If the product price is less than or equal to **$150**, categorize it as **Less Expensive**; otherwise, label it as **Expensive**. This classification enabled me to compare the percentage rates of Less Expensive products to Expensive products based on their prices.
 
 ### Skills / Concept demonstrated:
+- Page navigation
+- Filters
+- Buttons
+- Modelling
+- Dax
+- Excel functions
+- Record Macro
+- Pivot tables 
 
-To achieve this, I created some Dax to achieve my KPIs using functions like 
+
+ ### Modeling: 
+
+ Automatically generated relationships are adjusted to remove and replace unwanted relationship with required. 
+
+  Adjusted- Model                                                           |                                      Auto-Model 
+ :-------------------------------------------------------------------------:| :------------------------------------------------------------------------------------:                                                    
+ ![](Adjusted_model.PNG)                                                    |  ![](Auto_model_tbl.PNG)
+
+ The model is a Snowflake Schema. 
+ There is one fact table and 5- dimension tables. Among these, four are directly linked to the fact table, while the remaining one is connected to another dimension table.
+
+### The dax and functions overview
+I created some Dax to achieve my KPIs using functions like 
 
 - Distinct count function
 - Sum function
@@ -95,15 +116,6 @@ To achieve this, I created some Dax to achieve my KPIs using functions like
 - Index- Match function
 - IF and IFs function
 
- ### Modeling: 
-
- Automatically generated relationships are adjusted to remove and replace unwanted relationship with required. 
-
-| Adjusted- model                                    |                       Auto - model |
-:..................................................: | :...............................:
-|![](Adjusted_model.PNG)                             |         ![](Auto_model_tbl.PNG)    |
-
- 
  **How the functions are written using Dax on Excel**
 
 - Total Customers = DISTINCTCOUNT (FactlnternetSales [CustomerKey]) 
@@ -140,13 +152,19 @@ To achieve this, I created some Dax to achieve my KPIs using functions like
 - Unsold = 448
 - Avg Customers Age = 44 years
 
-### Data Modeling: 
-I realized that there are some unwanted relationship created automatically and the modeling was not well arranged hence i re-arranged the modeling and re-created the relation to fit the requirement. 
+
 
 ## Data Visualization and Analayis 
+ 
+ The report comprises of 2 tables namely; 
+  1. Time Series Analysis
+  2. Products - Customers Analysis
 
 
-![](Time series_Dashboard.PNG)
+### Time Analysis 
+
+![](Time_Analysis.PNG)
+
 
   To achieve the questions, I set for myself on this project I have to carryout a comprehensive analysis to determine the year that generated profit above average. 
   Year 2007 and 2008 generated profit at (67.1%). 
@@ -159,7 +177,7 @@ I realized that there are some unwanted relationship created automatically and t
 
 - Evaluation of profit performance on a quarterly basis, identifying trends and variations throughout the year: Quarter: Quarter 2 contributed the most profit with total of 39,018,891.40 at (31% ) follow by Quarter 1 with 32,300,639.02 at (26%)
 
-## Products and Customers Analysis 
+### Products and Customers Analysis 
    Products Analysis 
 
 - With total products of 606, I only wanted to compare what is the contribution of top 5 products by profit against other products. 
@@ -173,7 +191,7 @@ I realized that there are some unwanted relationship created automatically and t
 - Examine Profit Variations by Pricing Types: To arrive at Expensive and Less Expensive, the metrics i set for this was any product that its price is less than or equal to 150 dollar 
   it should be less expensive and else expensive here I can see that most customers went more for Expensive products which contributed 120,521,313 of total profit at 95.4% 
 
-## Customers Analysis 
+### Customers Analysis 
 
 Our total customers were 18,48 and Average age of our customers was 44 years. 
 - Top 5 Profitable Customers against Others:  Willie Xu is the most profitable customer with total profit of $80,609 and Top 5 Customers profit distribution was 61,985 at 0.3% while 
