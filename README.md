@@ -177,8 +177,10 @@ I created some Dax to achieve my KPIs using functions like
 
 - Evaluation of profit performance on a quarterly basis, identifying trends and variations throughout the year: Quarter: Quarter 2 contributed the most profit with total of 39,018,891.40 at (31% ) follow by Quarter 1 with 32,300,639.02 at (26%)
 
-### Products and Customers Analysis 
-   Products Analysis 
+## Products and Customers Analysis:
+  
+   ### Products Analysis 
+   ![](Products-Customers.JPG)
 
 - With total products of 606, I only wanted to compare what is the contribution of top 5 products by profit against other products. 
 
@@ -190,6 +192,7 @@ I created some Dax to achieve my KPIs using functions like
 
 - Examine Profit Variations by Pricing Types: To arrive at Expensive and Less Expensive, the metrics i set for this was any product that its price is less than or equal to 150 dollar 
   it should be less expensive and else expensive here I can see that most customers went more for Expensive products which contributed 120,521,313 of total profit at 95.4% 
+
 
 ### Customers Analysis 
 
