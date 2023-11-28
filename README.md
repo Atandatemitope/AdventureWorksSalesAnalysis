@@ -163,7 +163,7 @@ I created some Dax to achieve my KPIs using functions like
 
 ### Time Analysis:
 
-
+![](Time-Analysis.JPG)
 
 
   To achieve the questions, I set for myself on this project I have to carryout a comprehensive analysis to determine the year that generated profit above average. 
