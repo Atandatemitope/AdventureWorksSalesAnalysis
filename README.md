@@ -93,10 +93,13 @@ Additionally, I implemented metrics for classifying products into Expensive and 
 
  Automatically generated relationships are adjusted to remove and replace unwanted relationship with required. 
 
-  Adjusted- Model                                                           |                                      Auto-Model 
- :-------------------------------------------------------------------------:| :------------------------------------------------------------------------------------:                                                    
- ![](Adjusted_model.PNG)                                                    |  ![](Auto_model_tbl.PNG)
+  Auto - Model                                                              |                                      Adjusted - Model 
+ :-------------------------------------------------------------------------:| :---------------------------------------------------------------------------------------:                                                    
+  ![](Auto_model_tbl.PNG)                                                   |    ![](Adjusted_model.PNG)  
 
+ 
+ 
+ 
  The model is a Snowflake Schema. 
  There is one fact table and 5- dimension tables. Among these, four are directly linked to the fact table, while the remaining one is connected to another dimension table.
 
@@ -155,6 +158,7 @@ I created some Dax to achieve my KPIs using functions like
 
 
 ## Data Visualization and Analayis 
+---
  
  The report comprises of 2 tables namely; 
   1. Time Series Analysis
@@ -182,7 +186,7 @@ I created some Dax to achieve my KPIs using functions like
    ### Products Analysis 
    ![](Products-Customers.JPG)
 
-- With total products of 606, I only wanted to compare what is the contribution of top 5 products by profit against other products. 
+- With total products of **606**, I only wanted to compare what is the contribution of top 5 products by profit against other products. 
 
 - Comparison of profit share of the Top 5 Products against Others: Top 5 products generated 24.8% at (31,270,387.55) of total profit while the remaining he products (Others) generated 
  75.2% at (95,020,190.10) 
@@ -196,16 +200,20 @@ I created some Dax to achieve my KPIs using functions like
 
 ### Customers Analysis 
 
-Our total customers were 18,48 and Average age of our customers was 44 years. 
-- Top 5 Profitable Customers against Others:  Willie Xu is the most profitable customer with total profit of $80,609 and Top 5 Customers profit distribution was 61,985 at 0.3% while 
- other customers profit distribution was $125,939,566 at 99.7%
+![](Products-Customers.JPG)
+
+Our total customers were **18,48** and Average age of our customers was **44 years**. 
+
+#### Top 5 Profitable Customers against Others:  
+- Willie Xu is the most profitable customer with total profit of $80,609 and Top 5 Customers profit distribution was 61,985 at 0.3% while other customers profit distribution was $125,939,566 at 99.7%
 
 
-**Customers Demographic** 
-Gender-Based Profit Analysis: There is a close relationship between both gender: The Male gender contributed 50.4 of total profit while Female at 49.6%
+#### Customers Demographic 
+
+Gender-Based Profit Analysis : There is a close relationship between both gender: The Male gender contributed 50.4 of total profit while Female at 49.6%
 - Age 51 plus contributed 33.8% of the total profit.
 
-**Customers Location Analysis**
+#### Customers Location Analysis
 - Australia and United States contributed 62.7% of the total profit with United States generated total sum of $40,537,131 and Australia with total sum of $38,700,142.
 
 
@@ -219,6 +227,9 @@ In customer analysis, with a total of 1,848 customers and an average age of 44 y
 
 Analyzing customer demographics, gender-based profit showed a balanced contribution, with males at 50.4% and females at 49.6%. Customers aged 51 and above made a significant impact, contributing 33.8% to the total profit. Geographically, Australia and the United States jointly accounted for 62.7% of the total profit, with the United States generating $40,537,131 and Australia contributing $38,700,142.
 
+
+---
+
 ## Recommendations and Conclusions 
 
 - The company should focus on the patterns observed in profitable years (2007 and 2008) to identify any specific strategies or market conditions that led to above-average profits.
@@ -226,20 +237,18 @@ Analyzing customer demographics, gender-based profit showed a balanced contribut
 - Allocate resources and marketing efforts strategically, emphasizing Quarter 2 based on historical data. This approach will maximize returns during peak periods, optimizing our 
   overall quarterly performance.
 
-Targeted Marketing in Peak Months:
-
 - Implement targeted marketing initiatives, promotions, and product launches during high-profit months (May, June, and December). Leveraging these peak periods can enhance market visibility and drive increased sales.
-Product Portfolio Optimization:
 
 - Focus on the top 5 profitable products while exploring strategies to boost sales for other products. A balanced optimization approach ensures a diverse and competitive product portfolio that appeals to a wider customer base.
 
 - Prioritize customer retention efforts, particularly with high-profit customers like Willie Xu and the top 5 customers. Introduce loyalty programs and personalized offers to strengthen customer relationships and foster long-term loyalty.
 
 ## Conclusion 
-As we navigate the path ahead, these insights provide a solid foundation for strategic decision-making. By applying these personalized recommendations, I am confident that we can enhance our business performance and drive sustained success.
+As we navigate the path ahead, these insights provide a solid foundation for strategic decision-making. By applying these personalized recommendations, I am confident that we can enhance our business performance and drive sustained success. 👍
 
 
-
+#### Thank you for your time 
+![](Thank_you.jpeg)
 
 
 
