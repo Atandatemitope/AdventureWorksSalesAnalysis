@@ -250,6 +250,8 @@ As we navigate the path ahead, these insights provide a solid foundation for str
 #### Thank you for your time 
 ![](Thank_you.jpeg)
 
+You can connect with me on LinkedIn [Here] (https://www.linkedin.com/in/temitopeatandao/)
+
 
 
 
