@@ -246,6 +246,9 @@ Analyzing customer demographics, gender-based profit showed a balanced contribut
 ## Conclusion 
 As we navigate the path ahead, these insights provide a solid foundation for strategic decision-making. By applying these personalized recommendations, I am confident that we can enhance our business performance and drive sustained success. 👍
 
+You can interact with the report [Here](https://atandatee-my.sharepoint.com/:x:/r/personal/temitope_atandatee_onmicrosoft_com/_layouts/15/Doc.aspx?sourcedoc=%7B4E0AD8C2-1ABF-457A-B243-EAE80DCC56AE%7D&file=Adventure%20Works%20Sales%20Analysis%20Dashboard.xlsm&action=default&mobileredirect=true)
+
+
 
 #### Thank you for your time 
 ![](Thank_you.jpeg)
